@@ -6,6 +6,8 @@ Showcase your Github, Projects and/or yourself for the ZtM community
 
 The inspiration for this project can be found at https://uses.tech, we will take this concept and take it a bit further with user management and a DB.
 
+#### Get started
+Clone the repo and run `npm install`
 
 #### Development server
 
