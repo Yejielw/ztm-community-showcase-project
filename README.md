@@ -1,6 +1,7 @@
-# HubAngularDemo
+[![](https://img.shields.io/badge/ANGULAR%20PROJECT-ZtM%20COMMUNITY%20SHOWCASE%20PROJECT%20-DD0031?style=for-the-badge&logo=Angular)](https://github.com/Yejielw/ztm-community-showcase-project)
+> As the community grows lot of people has built great and beautiful stuff, we are making a way so that everyone has a place to share his story and what he has done, find people with similar interests or inspiration.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
+[Project Repo](https://github.com/Yejielw/ztm-community-showcase-project) | [Join Project](https://discordapp.com/channels/423464391791476747/668912049719476256/672411812469407745)
 
 ## Development server
 
