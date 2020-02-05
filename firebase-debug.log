@@ -1,0 +1,43 @@
+[debug] [2020-02-05T15:38:32.599Z] ----------------------------------------------------------------------
+[debug] [2020-02-05T15:38:32.601Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-02-05T15:38:32.602Z] CLI Version:   7.12.1
+[debug] [2020-02-05T15:38:32.602Z] Platform:      win32
+[debug] [2020-02-05T15:38:32.602Z] Node Version:  v12.14.1
+[debug] [2020-02-05T15:38:32.602Z] Time:          Wed Feb 05 2020 17:38:32 GMT+0200 (Israel Standard Time)
+[debug] [2020-02-05T15:38:32.602Z] ----------------------------------------------------------------------
+[debug] [2020-02-05T15:38:32.602Z] 
+[debug] [2020-02-05T15:38:32.608Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-05T15:38:32.608Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\yejielw\projects\ztm-showcase
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using ztm-showcase.
+[debug] [2020-02-05T15:38:38.602Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ztm-showcase  
+ 
+[debug] [2020-02-05T15:38:39.100Z] <<< HTTP RESPONSE 200
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
