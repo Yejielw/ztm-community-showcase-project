@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "hub-angular-demo"
+  "defaultProject": "hub-angular-demo",
+  "cli": {
+    "analytics": false
+  }
 }
