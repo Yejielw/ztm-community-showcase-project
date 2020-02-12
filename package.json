@@ -17,7 +17,7 @@
     "@angular/compiler": "~9.0.0",
     "@angular/core": "~9.0.0",
     "@angular/fire": "^5.4.0",
-    "@angular/flex-layout": "^9.0.0",
+    "@angular/flex-layout": "9.0.0-beta.29",
     "@angular/forms": "~9.0.0-rc",
     "@angular/material": "^9.0.0",
     "@angular/platform-browser": "~9.0.0",
@@ -29,10 +29,10 @@
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.900.0-rc.12",
-    "@angular/cli": "~9.0.0-rc.12",
-    "@angular/compiler-cli": "~9.0.0-rc.12",
-    "@angular/language-service": "~9.0.0-rc.12",
+    "@angular/cli": "9.0.1",
+    "@angular/compiler-cli": "9.0.0",
+    "@angular/language-service": "9.0.0",
+    "@angular-devkit/build-angular": "0.900.1",
     "@types/node": "^12.11.1",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
