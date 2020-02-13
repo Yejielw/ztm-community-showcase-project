@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, Subject } from 'rxjs';
+import {  BehaviorSubject } from 'rxjs';
 import { ShowcaseItem } from 'src/app/data/showcase-item';
 
 
@@ -9,12 +9,14 @@ import { ShowcaseItem } from 'src/app/data/showcase-item';
 })
 export class ShowcasesService {
 
-  public showCasesSubject:Subject<ShowcaseItem[]>=new Subject<ShowcaseItem[]>();
+  public showCasesSubject:BehaviorSubject<ShowcaseItem[]>=new BehaviorSubject<ShowcaseItem[]>(null);
   SERVER_URL: string = "http://localhost:8080/api/";
-  constructor(private httpClient:HttpClient) { }
+  constructor(private httpClient:HttpClient) {
+    this.getAllShowCases()
+  }
 
 
-  public getAllShowCases()
+  private getAllShowCases()
   {
 
     let data;
@@ -22,6 +24,9 @@ export class ShowcasesService {
     {
       data=response;
       this.showCasesSubject.next(data);
+      setTimeout(() => {
+        this.getAllShowCases()
+    }, 5000);
     })
 
   }

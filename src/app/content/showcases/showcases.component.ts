@@ -22,7 +22,7 @@ export class ShowcasesComponent implements OnInit {
 
   public showcaseItems:ShowcaseItem[];
   ngOnInit(): void {
-    this.showcasesService.getAllShowCases();
+
   }
 
 }
