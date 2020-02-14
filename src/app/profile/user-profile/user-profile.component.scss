@@ -1,0 +1,17 @@
+@import "styles";
+
+.profile-header {
+    display:grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    padding:30px 0 30px 130px;
+    border:1px solid black;
+
+    .profile-image{
+        border-radius: 50%;
+    }
+
+    .user-header {
+        font-weight: bold;
+    }
+
+}

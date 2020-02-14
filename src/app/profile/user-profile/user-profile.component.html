@@ -1,1 +1,20 @@
-<p>user-profile works!</p>
+<header class="profile-header ">
+    <img src="https://via.placeholder.com/150" class="profile-image">
+
+    <section class="user-details" >
+        <h1 class="user-header ">John Wick</h1>
+        <section class="ml-32 mt-8">
+            <h2 >Hitman</h2>
+            <h3>Dontkillmydog@gmail.com</h3>
+            <h3><a href="www.linkedin.com" target="_blank">www.linkedin.com</a></h3>
+        </section>
+    </section>
+    <section>
+        <h2>Community Badges</h2>
+        <section  class="mt-20" fxLayout="row" fxLayoutAlign="center">
+                <ng-container *ngFor="let image of mockImages; let first = first">
+                    <img [src]="image" [class.ml-32]="!first">
+                </ng-container>
+        </section>
+    </section>
+</header>
