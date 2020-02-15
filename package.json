@@ -26,7 +26,8 @@
     "firebase": "^7.8.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.10.2",
+    "angular-in-memory-web-api": "^0.9.0"
   },
   "devDependencies": {
     "@angular/cli": "9.0.1",
