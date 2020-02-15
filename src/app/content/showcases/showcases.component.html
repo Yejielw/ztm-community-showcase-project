@@ -1,6 +1,8 @@
-<div *ngFor="let item of showcaseItems">
- <div>Title :{{item.Title}}</div>
- <div>Subtitle: {{item.Subtitle}}</div>
- <div>Summary: {{item.Summary}}</div>
- <div>Description: {{item.Description}}</div>
-</div>
+<ng-container *ngIf="showcaseItems$  | async as showcaseItems">
+    <div *ngFor="let item of showcaseItems" class="my-8">
+        <div>Title :{{item.Title}}</div>
+        <div>Subtitle: {{item.Subtitle}}</div>
+        <div>Summary: {{item.Summary}}</div>
+        <div>Description: {{item.Description}}</div>
+    </div>
+</ng-container>
