@@ -1,5 +1,5 @@
 <header class="profile-header ">
-    <img src="https://via.placeholder.com/150" class="profile-image">
+    <img src="https://via.placeholder.com/150" class="profile-image" alt="Profile Picture">
 
     <section class="user-details" >
         <h1 class="user-header ">John Wick</h1>
@@ -11,10 +11,8 @@
     </section>
     <section>
         <h2>Community Badges</h2>
-        <section  class="mt-20" fxLayout="row" fxLayoutAlign="center">
-                <ng-container *ngFor="let image of mockImages; let first = first">
-                    <img [src]="image" [class.ml-32]="!first">
-                </ng-container>
+        <section  class="mt-20" fxLayout="row" fxLayoutAlign="start" fxLayoutGap="32px">
+            <img *ngFor="let image of mockImages" [src]="image" alt="badge">
         </section>
     </section>
 </header>
