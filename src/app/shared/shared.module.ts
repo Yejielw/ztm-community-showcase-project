@@ -10,12 +10,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   imports: [
     FlexLayoutModule,
     CommonModule,
-    BrowserAnimationsModule,
   ],
   exports: [
     FlexLayoutModule,
     CommonModule,
-    BrowserAnimationsModule,
 
   ]
 })

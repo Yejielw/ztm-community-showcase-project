@@ -10,15 +10,22 @@ import { tap, catchError } from "rxjs/operators";
 export class ShowcasesService {
 
   SERVER_URL: string = "api/showcases";
+  private showcasesSource = new BehaviorSubject([]);
+  showcases$ = this.showcasesSource.asObservable();
 
 
   constructor(private httpClient: HttpClient) {
   }
 
+  private setShowcases(data){
+    return this.showcasesSource.next(data);
+  }
+
+
 
   getAllShowCases(): Observable<ShowcaseItem[]> {
     return this.httpClient.get<ShowcaseItem[]>(this.SERVER_URL).pipe(
-      tap(data => console.log(data)),
+      tap(data => this.setShowcases(data)),
       catchError(err => {
         return throwError(err);
       }))
