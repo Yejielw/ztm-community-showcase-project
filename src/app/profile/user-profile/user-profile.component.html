@@ -1,5 +1,5 @@
-<header class="profile-header " fxLayout="row">
-    <img src="https://via.placeholder.com/150" class="profile-image">
+<header class="profile-header ">
+    <img src="https://via.placeholder.com/150" class="profile-image" alt="Profile Picture">
 
     <article class="user-details" fxLayout="column" fxLayoutAlign="flex-end start">
         <h1>John Wick</h1>
@@ -8,12 +8,11 @@
             <h3>Dontkillmydog@gmail.com</h3>
             <h3><a href="www.linkedin.com" target="_blank">www.linkedin.com</a></h3>
         </section>
-    </article>
-    <article class="showcase-details">
-        <section class="item-counters">
-            <h2>Showcase Items</h2>
-            <h1>8</h1>
+    </section>
+    <section>
+        <h2>Community Badges</h2>
+        <section  class="mt-20" fxLayout="row" fxLayoutAlign="start" fxLayoutGap="32px">
+            <img *ngFor="let image of mockImages" [src]="image" alt="badge">
         </section>
-
-    </article>
+    </section>
 </header>
