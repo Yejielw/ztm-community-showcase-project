@@ -10,7 +10,7 @@ import { tap, catchError } from "rxjs/operators";
 export class ShowcasesService {
 
   SERVER_URL: string = "api/showcases";
-  private showcasesSource = new BehaviorSubject([]);
+  private showcasesSource = new BehaviorSubject(null);
   showcases$ = this.showcasesSource.asObservable();
 
 
