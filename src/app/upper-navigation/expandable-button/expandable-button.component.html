@@ -1,0 +1,8 @@
+<a *ngFor="let item of dataSource" [routerLink]="item.route">
+  <!-- Left empty until we decide on either Material Icons or Font Awesome -->
+</a>
+
+<!-- Assign a name to a button if the component only contains a single item -->
+<h3 *ngIf="dataSource.length === 1">
+  <ng-content></ng-content>
+</h3>

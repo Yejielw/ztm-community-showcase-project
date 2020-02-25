@@ -8,27 +8,34 @@ import { SharedModule } from './shared/shared.module';
 import { environment } from 'src/environments/environment';
 import { LoadingComponent } from './loading/loading.component';
 import { UpperNavigationComponent } from './upper-navigation/upper-navigation.component';
-import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { HttpClientModule } from '@angular/common/http';
+import { ExpandableButtonComponent } from './upper-navigation/expandable-button/expandable-button.component';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoadingComponent,
-    UpperNavigationComponent
+    UpperNavigationComponent,
+    ExpandableButtonComponent
   ],
   imports: [
     AppRoutingModule,
     SharedModule,
     HttpClientModule,
     MatToolbarModule,
+    MatIconModule,
     //!environment.production ?
-    HttpClientInMemoryWebApiModule.forRoot(InMemoryShowcasesService, { delay: 100 })
+    HttpClientInMemoryWebApiModule.forRoot(InMemoryShowcasesService, {
+      delay: 100
+    })
     // : []
     // AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

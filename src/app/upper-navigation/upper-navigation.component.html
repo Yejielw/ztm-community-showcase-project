@@ -1,16 +1,10 @@
-<mat-toolbar color="accent">
-  <mat-toolbar-row>
+<mat-toolbar class="mat-elevation-z2">
+  <mat-toolbar-row fxLayout fxLayoutAlign="space-between center">
   <a  [routerLink]="[ '/' ]" fxLayout="row wrap" fxLayoutAlign="start center">
     <img width="40" alt="Angular Logo"
       src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==" />
-    <span>Welcome To the ZtM Showcase</span>
+    <span>ZTM - Community Showcase</span>
     </a>
-    <a routerLink="auth/login" >Login</a>
-    <a routerLink="/auth/register" >Register</a>
-    <a routerLink="/content/showcases" >Showcase</a>
-    <a routerLink="/content/liked-showcases" >Liked Showcase</a>
-    <a routerLink="/modify/add" >Add</a>
-    <a routerLink="/modify/edit" >Edit</a>
-    <a routerLink="/profile" >User Profile</a>
+    <app-expandable-button></app-expandable-button>
   </mat-toolbar-row>
 </mat-toolbar>
