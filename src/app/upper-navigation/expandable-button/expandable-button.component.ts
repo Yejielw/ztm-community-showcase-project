@@ -29,41 +29,43 @@ export interface ExpandableButtonDataSource {
   selector: 'app-expandable-button',
   templateUrl: './expandable-button.component.html',
   styleUrls: ['./expandable-button.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [
     trigger('expand', [
       state('collapsed', style({ width: '40px' })),
-      state('expanded', style({ width: '200px' })),
-      transition('expanded <=> collapsed', animate(1000))
+      state('expanded', style({ width: '*' })),
+
+      transition(
+        'expanded <=> collapsed',
+        animate('350ms cubic-bezier(0, 0, 0, 0.9)')
+      )
     ])
   ]
 })
 export class ExpandableButtonComponent implements OnInit {
   constructor() {}
 
-  @Input() dataSource: ExpandableButtonDataSource[];
+  @Input() dataSource: ExpandableButtonDataSource[] = []
 
-  @HostBinding('@expand') private state: 'collapsed' | 'expanded' = 'collapsed';
+  @HostBinding('@expand')
+  public state: 'collapsed' | 'expanded' = 'collapsed';
 
-  @HostListener('click') toggleExpand() {
-    return this.toggle();
+  @HostListener('mouseenter')
+  // Expands button
+  expand() {
+    return (this.state = 'expanded');
+  }
+
+  @HostListener('mouseleave')
+  // Collapses button
+  collapse() {
+    return (this.state = 'collapsed');
   }
 
   ngOnInit(): void {}
 
   // Toggles button expansion
   toggle() {
-    console.log('Toggled');
-
-    return this.state === 'collapsed' ? 'expanded' : 'collapsed';
-  }
-
-  // Expands button
-  expand() {
-    return (this.state = 'expanded');
-  }
-
-  // Collapses button
-  collapse() {
-    return (this.state = 'collapsed');
+    return (this.state = this.state === 'collapsed' ? 'expanded' : 'collapsed');
   }
 }

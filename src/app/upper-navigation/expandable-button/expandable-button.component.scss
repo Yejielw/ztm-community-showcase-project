@@ -1,11 +1,27 @@
-section {
+:host {
+  flex-direction: row-reverse;
+  box-sizing: border-box;
+  display: flex;
+  place-content: center flex-start;
+  align-items: center;
   height: 40px;
   min-width: 40px;
+  border: 1px solid #000;
   border-radius: 40px;
   overflow: hidden;
   background-color: #bdbdbd;
-  // transition: 1s cubic-bezier(0, 0, 0.11, 0.74);
-  // &:hover {
-  //   width: 200px;
-  // }
+}
+
+a {
+  min-width: 40px;
+  min-height: 40px;
+  position: relative;
+  cursor: pointer;
+  &:hover {
+    color: blue; // Testing purposes
+  }
+}
+
+h3 {
+  margin-left: 20px;
 }

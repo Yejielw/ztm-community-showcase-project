@@ -13,6 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { HttpClientModule } from '@angular/common/http';
 import { ExpandableButtonComponent } from './upper-navigation/expandable-button/expandable-button.component';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
