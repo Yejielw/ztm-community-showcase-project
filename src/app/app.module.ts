@@ -11,6 +11,7 @@ import { UpperNavigationComponent } from './upper-navigation/upper-navigation.co
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,11 +23,9 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     SharedModule,
     HttpClientModule,
+    BrowserAnimationsModule,
     MatToolbarModule,
-    //!environment.production ?
     HttpClientInMemoryWebApiModule.forRoot(InMemoryShowcasesService, { delay: 100 })
-    // : []
-    // AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [],
   bootstrap: [AppComponent],

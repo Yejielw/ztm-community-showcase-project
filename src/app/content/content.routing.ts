@@ -4,8 +4,8 @@ import { LikedShowcasesComponent } from './liked-showcases/liked-showcases.compo
 
 export const routes: Routes = [
   { path: '', component: ShowcasesComponent },
-    { path: 'showcases', component: ShowcasesComponent },
-    { path: 'liked-showcases', component: LikedShowcasesComponent },
+  { path: 'showcases', component: ShowcasesComponent },
+  { path: 'liked-showcases', component: LikedShowcasesComponent },
 ]
 
 //TODO: showcases and liked-showcases should point to same component

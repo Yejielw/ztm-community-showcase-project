@@ -7,22 +7,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './showcases.component.html',
   styleUrls: ['./showcases.component.scss']
 })
-export class ShowcasesComponent implements OnInit {
+export class ShowcasesComponent {
 
-  constructor(private showcasesService:ShowcasesService) {
-    console.log('ShowcasesComponent constructor');
-    showcasesService.showCasesSubject.subscribe(data=>
-      {
-        this.showcaseItems=data;
-      });
+  constructor(private  showcasesService : ShowcasesService){}
 
-
-
-   }
-
-  public showcaseItems:ShowcaseItem[];
-  ngOnInit(): void {
-
-  }
+  showcaseItems$ = this.showcasesService.getAllShowCases();
 
 }
