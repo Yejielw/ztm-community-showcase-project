@@ -1,0 +1,33 @@
+<header class="profile-header ">
+    <article fxLayout="flex">
+        <img src="assets/stock/profile.jpg" class="profile-image" alt="Profile Picture">
+        <article class="user-details">
+            <h1>John Wick</h1>
+            <section class="ml-32 mt-8">
+                <h2>Hitman</h2>
+                <h3>Dontkillmydog@gmail.com</h3>
+                <h3><a href="www.linkedin.com" target="_blank">Personal Site</a></h3>
+            </section>
+        </article>
+    </article>
+    <article class="showcase-items">
+        <section fxLayout="column" fxLayoutAlign="center center">
+            <h3>Showcase Items</h3>
+            <h1 class="showcase mt-8" fxLayout="row" fxLayoutAlign="center center">8</h1>
+        </section>
+        <section fxLayout="column" fxLayoutAlign="center center">
+            <h3>Followers</h3>
+            <h1 class="showcase mt-8" fxLayout="row" fxLayoutAlign="center center">18</h1>
+        </section>
+        <section fxLayout="column" fxLayoutAlign="center center">
+            <h3>Following</h3>
+            <h1 class="showcase mt-8" fxLayout="row" fxLayoutAlign="center center">12</h1>
+        </section>
+    </article>
+    <article class="my-sites" fxLayout="column" fxLayoutAlign="center center">
+        <h3>My Sites</h3>
+        <section class="mt-8"    fxLayout="row" fxLayoutAlign="start" fxLayoutGap="32px">
+            <img *ngFor="let image of mockImages" [src]="image" alt="badge">
+        </section>
+    </article>
+</header>
