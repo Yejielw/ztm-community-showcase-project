@@ -7,9 +7,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidenavComponent implements OnInit {
 
+
+  tabs = [
+    {
+      iconFamily:"fas",
+      icon:"user-circle",
+      text: "Profile"
+    },
+    {
+      iconFamily:"fas",
+      icon:"bell",
+      text:"Notifications"
+    },
+    {
+      iconFamily:"fas",
+      icon:"wrench",
+      text:"Settings"
+    }
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+
 
 }

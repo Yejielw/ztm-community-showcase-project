@@ -27,7 +27,8 @@
     <article class="my-sites" fxLayout="column" fxLayoutAlign="center center">
         <h3>My Sites</h3>
         <section class="mt-8"    fxLayout="row" fxLayoutAlign="start" fxLayoutGap="32px">
-            <img *ngFor="let image of mockImages" [src]="image" alt="badge">
+            
+            <fa-icon [icon]="['fab',social]" size="4x" *ngFor="let social of socialMedia"></fa-icon>
         </section>
     </article>
 </header>

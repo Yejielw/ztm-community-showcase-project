@@ -13,11 +13,12 @@ export class HeaderComponent implements OnInit {
   }
 
 
-  mockImages = [
-    "https://via.placeholder.com/75",
-    "https://via.placeholder.com/75",
-    "https://via.placeholder.com/75",
-    "https://via.placeholder.com/75"
+  socialMedia = [
+    "linkedin",
+    "twitter",
+    "instagram",
+    "facebook",
+    "free-code-camp"
   ]
 
 
