@@ -8,13 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class UserProfileComponent implements OnInit {
 
 
-  mockImages = [
-    "https://via.placeholder.com/100",
-    "https://via.placeholder.com/100",
-    "https://via.placeholder.com/100",
-    "https://via.placeholder.com/100"
-  ]
-
 
   constructor() {
 
