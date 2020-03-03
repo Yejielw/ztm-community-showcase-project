@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './sidenav.component.html',
   styleUrls: ['./sidenav.component.scss']
 })
-export class SidenavComponent implements OnInit {
+export class SidenavComponent  {
 
 
   tabs = [
@@ -26,10 +26,6 @@ export class SidenavComponent implements OnInit {
     }
   ]
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
 
 
