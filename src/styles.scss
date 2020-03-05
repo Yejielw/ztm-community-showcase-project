@@ -1,5 +1,19 @@
 @import "sass/core";
 /* You can add global styles to this file, and also import other style files */
-* {margin:0; padding:0; font-family: Roboto , "Helvetica Neue", sans-serif; }
+* {margin:0; padding:0; font-family: "open-sans" }
 html, body { height: 100%;  }
 body { margin: 0; }
+
+
+h1 {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+h2 {
+    font-size:28px;
+}
+
+h3 {
+    font-size:24px;
+}

@@ -1,0 +1,14 @@
+.nav {
+    height:100%;
+    border:1px solid black;
+
+    section {
+        height:75px;
+    }
+
+    .tab:hover {
+        height:125px;
+        cursor: pointer;
+        background-color: lightgray;
+    }
+}

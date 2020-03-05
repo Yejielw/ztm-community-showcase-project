@@ -1,18 +1,4 @@
-<header class="profile-header ">
-    <img src="https://via.placeholder.com/150" class="profile-image" alt="Profile Picture">
-
-    <article class="user-details" fxLayout="column" fxLayoutAlign="flex-end start">
-        <h1>John Wick</h1>
-        <section class="ml-32 mt-8">
-            <h2>Hitman</h2>
-            <h3>Dontkillmydog@gmail.com</h3>
-            <h3><a href="www.linkedin.com" target="_blank">www.linkedin.com</a></h3>
-        </section>
-    </section>
-    <section>
-        <h2>Community Badges</h2>
-        <section  class="mt-20" fxLayout="row" fxLayoutAlign="start" fxLayoutGap="32px">
-            <img *ngFor="let image of mockImages" [src]="image" alt="badge">
-        </section>
-    </section>
-</header>
+<app-header></app-header>
+<main class="main">
+    <app-sidenav></app-sidenav>
+</main>

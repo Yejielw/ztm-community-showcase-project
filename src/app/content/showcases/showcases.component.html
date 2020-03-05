@@ -1,8 +1,12 @@
-<ng-container *ngIf="showcaseItems$  | async as showcaseItems">
-    <div *ngFor="let item of showcaseItems" class="my-8">
-        <div>Title :{{item.Title}}</div>
-        <div>Subtitle: {{item.Subtitle}}</div>
-        <div>Summary: {{item.Summary}}</div>
-        <div>Description: {{item.Description}}</div>
-    </div>
-</ng-container>
+<main fxLayout="row" fxLayoutAlign="center start" class="mt-28">
+    <article class="search-container">
+        <fa-icon [icon]="['fas','search']" size="2x" class="search-icon"></fa-icon>
+        <input type="text" class="search-input">
+    </article>
+    <fa-icon [icon]="['fas','filter']" size="2x" class="filter-icon"></fa-icon>
+</main>
+<article fxLayoutAlign="center start">
+    <section class="filter-list">
+
+    </section>
+</article>
